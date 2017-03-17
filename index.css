@@ -166,6 +166,10 @@ main>div>div>ul li{
         margin-right: 25px;
     }
 
+    .languages{
+        margin-top:100px; 
+    }
+
     main>div{
         display: flex;
         flex-direction: column;
