@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+#just_load{
+    background-color: white;
+    z-index: 40;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*display: none;*/
+}
+
+.just_load>h1{
+
+}
+
+body>header{
+   display: flex;
+   width: 100px;
+   padding: 10px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: white;
+   z-index: -1;
+   width: 100vw;
+   border-bottom: 2px solid rgba(255,112,19,0.85);
+   justify-content: space-between;
+}
+
+.profile,.contact{
+    display: flex;
+}
+
+.profile>img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 2px solid rgba(255,112,19,0.85) ;
+    margin: 4px 50px;
+}
+
+.profile>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.profile>div>div>h3{
+    font-weight: bold;
+    color: gray;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.profile>div>div>h4{
+    color: lightgray;
+}
+
+.contact>div{
+    margin: 4px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.contact>div>div{
+    display: flex;
+}
+
+.contact i{
+    margin: 0 8px;
+    color: rgba(255,112,19,0.85);
+    font-size: 20px;
+}
+
+.contact p{
+    color: rgba(255,112,19,0.85);
+}
+
+.contact a{
+    text-decoration: none;
+    color: rgba(255,112,19,0.85);
+}
+
+.contact a:hover{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(255,112,19,0.85);
+}
+
+main{
+    margin: 200px;
+}
+
+main>div{
+    display: flex;
+    justify-content: space-around;
+}
+
+main>div>div{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 25vh;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.06);
+}
+
+main>div>div>header{
+    padding: 20px;
+    border-bottom:1px solid lightgray;
+}
+
+main>div>div>header>h3{
+    color: rgba(255,112,19,0.85);
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+main>div>div>ul>div{
+    display: flex;
+    margin: 24px;
+}
+
+main>div>div>ul>div>i{
+    margin: 0 12px;
+    color: rgba(255,112,19,0.85);
+}
+
+main>div>div>ul li{
+    list-style: none;
+    color: gray;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+.skills{
+    width: 40%;
+}
+
+.languages{
+    width: 30%;
+}
+
+.skills>header,.languages>header{
+    display: flex;
+    justify-content: center;
+}
+
+.skills>ul{
+    margin-left: 20%;
+}
+
+@media (max-device-width: 720px) {
+    main{
+        margin-top: 120px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    main>div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main>div>div,.skills,.languages{
+        width: 100%;
+        height: 100%;
+    }
+
+    body>header{
+       padding-left: 0;
+    }
+
+    .profile>img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        border: 2px solid rgba(255,112,19,0.85) ;
+        margin: 4px 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact>div{
+        margin: 4px 12px;
+    }
+
+
+    .skills>ul,.languages>ul{
+        margin-left: 0;
+    }
+}
+
+
+
+
